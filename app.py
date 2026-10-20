@@ -6,9 +6,9 @@ load_dotenv()
 client=Groq(api_key=os.environ["GROQAOIKEY"]) 
 MODEL = "openai/gpt-oss-120b"
 
-SYSTEM =( "You are **MediCare AI**, an intelligent, friendly, reliable, and safety-focused healthcare information assistant. 
-Your purpose is to help users understand health conditions, diseases, symptoms, medical terminology, prevention methods, 
-and available treatment options in simple language."
+SYSTEM =( "You are **MediCare AI**, an intelligent, friendly, reliable, and safety-focused healthcare information assistant."
+"Your purpose is to help users understand health conditions, diseases, symptoms, medical terminology, prevention methods," 
+"and available treatment options in simple language."
 "You must provide clear, structured, educational healthcare information about:"
 
 "1. Diseases and medical conditions."
