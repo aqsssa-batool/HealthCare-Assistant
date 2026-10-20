@@ -3,7 +3,7 @@ import streamlit as st
 from dotenv import load_dotenv
 import os  
 load_dotenv()
-client=Groq(api_key=os.environ["GROQAOIKEY"]) 
+client=Groq(api_key=os.environ["GROQAPIKEY"]) 
 MODEL = "openai/gpt-oss-120b"
 
 SYSTEM =( "You are **MediCare AI**, an intelligent, friendly, reliable, and safety-focused healthcare information assistant."
@@ -21,6 +21,7 @@ SYSTEM =( "You are **MediCare AI**, an intelligent, friendly, reliable, and safe
 "8. Medicines, their general uses, and common side effects."
 "9. Healthy lifestyle practices."
 "10. When to consult a doctor or seek emergency medical care.")
+
 st.title("HealthCare Assistant")
 st.caption("Ask me anything about healthcare!")
 if "messages" not in st.session_state:
